@@ -8,8 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      name: Checkout the code
-      uses: actions/checkout@v4
+      - name: Checkout the code
+        uses: actions/checkout@v4
 
-      name: List the files
-      run: ls -ltr
+      - name: List the files
+        run: ls -ltr
