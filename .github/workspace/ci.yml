@@ -1,0 +1,11 @@
+name: CI for demo app
+
+on:
+  push:
+
+jobs:
+    name: Checkout the code
+    uses: actions/checkout@v4
+
+    name: List the files
+    run: ls -ltr
