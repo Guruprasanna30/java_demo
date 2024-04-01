@@ -15,4 +15,4 @@ jobs:
         run: ls -ltr
 
       - name: Secret
-        run: echo ${secrets.MYSECRET}
+        run: echo ${{ secrets.MYSECRET }}
