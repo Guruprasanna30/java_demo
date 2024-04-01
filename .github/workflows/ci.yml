@@ -13,3 +13,6 @@ jobs:
 
       - name: List the files
         run: ls -ltr
+
+      - name: Secret
+        run: echo ${secret.MYSECRET}
