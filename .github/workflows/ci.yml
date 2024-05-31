@@ -16,3 +16,6 @@ jobs:
 
       - name: Secret
         run: echo ${{ secrets.MYSECRET }}
+
+      - name: Echo branch name
+        run: echo "Current branch: ${{ github.ref }}"
