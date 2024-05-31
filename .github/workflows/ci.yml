@@ -18,4 +18,4 @@ jobs:
         run: echo ${{ secrets.MYSECRET }}
 
       - name: Echo branch name
-        run: echo "Current branch is ${{ env.GITHUB_REF#refs/heads/ }}"
+        run: echo "Current branch is ${{ github.ref }}"
