@@ -3,6 +3,9 @@ name: CI for demo app
 on: 
   push:
 
+env:
+  App_name: ""
+  Level: L1
 jobs:
   CI:
     runs-on: ubuntu-latest
@@ -15,7 +18,7 @@ jobs:
         run: ls -ltr
 
       - name: Secret
-        run: echo ${{ secrets.MYSECRET }}
+        run: echo ${{ env.App_name }}
 
       - name: Echo branch name
         run: echo Current branch is ${ GITHUB_REF##*/ }
